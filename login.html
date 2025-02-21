@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .login-container {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 300px;
+            text-align: left;
+            margin: 50px auto;
+        }
+        .login-container h2 {
+            margin-bottom: 15px;
+        }
+        .search-input {
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+            padding-left: 10px;
+            box-shadow: none;
+        }
+        .fa-magnifying-glass {
+            position: relative;
+            color: gray;
+            cursor: pointer;
+        }
+        .login-container >form>input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .login-footer {
+            margin-top: 15px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .login-footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+            <div class="menu">
+                <div class="menu-header">
+                    <ul>
+                        <li><a href="index.html"><img  src="logo_mobile.png" alt=""></a></li>
+                        <li class="dropdown"><a href="">Hà Nội <i class="fa-solid fa-sort-down"></i></a>
+                            <ul>
+                                <li><a href="">Hà Nội</a></li>
+                                <li><a href="">TP.HCM</a></li>
+                                <li><a href="">Đà Nẵng</a></li>
+                            </ul>
+                        </li>
+                        <li><input class="search-input" type="text" placeholder="Tìm kiếm sản phẩm ..."><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li><a href=""></a><button><i class="login"></i>Đăng nhập</button></li>
+                        <li><a href=""></a><button><i class="sigup"></i>Đăng ký</button></li>
+                        <li><a style="font-weight: bold;" href="">TIN TỨC |</a></li>
+                        <li><a style="font-weight: bold;" href="">EVENT |</a></li>
+                        <li><a style="font-weight: bold;" href="">TRA CỨU BH</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <section class="login-container">
+        <h2 style="text-align: center;">Đăng nhập</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <div style="text-align: left;">
+                <input type="checkbox">
+                <span>
+                    <span></span>Ghi nhớ tài khoản
+                </span>
+            </div>
+            <div style="text-align: left; margin-bottom: 10px;">
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+            <a href="index.html">
+            <button type="button">Đăng nhập</button>
+            </a>
+        </form>
+        <div class="login-footer">
+            <div>
+                Bạn chưa có tài khoản? <a href="signup.html">Đăng ký</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

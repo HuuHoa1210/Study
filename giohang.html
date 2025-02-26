@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/LOGO-removebg-preview.png" type="image/x-icon">
+    <title>Giohang</title>
+</head>
+
+<body>
+    <my-header></my-header>
+    <div class="checkout-container">
+        <div class="navigation-bar">
+            <div class="navigate-btn-group">
+                <div class="homepage-btn">
+                    <a href="index.html">Trang chủ</a>
+                    
+                </div>
+                <div class="products-btn">
+                    <a>Giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-content">
+            <div class="checkout-tables">
+                <table class="checkout-table">
+                    <tr>
+                        <th class="image">Sản phẩm</th>
+                        <th class="description">Mô Tả</th>
+                        <th class="price">Giá</th>
+                        <th class="quantity">Số Lượng</th>
+                        <th class="sum">Tổng</th>
+                        <th class="delete">Xóa</th>
+                    </tr>
+                    <tr class="border-bottom product1 product">
+                        <td class="product-image"><img src="img/iphone-11-pro-xanh.jpg.webp"></td>
+                        <td class="product-description">iPhone 11 Pro màu xanh</td>
+                        <td class="product-price">8,590,000₫</td>
+                        <td class="product-quantity"><input type="number" value="1" min="1" onchange="calculate(1)">
+                        </td>
+                        <td class="product-sum">8,590,000₫</td>
+                        <td class="delete-btn"><img src="img/th__1_-removebg-preview.png" class="delete-icon"
+                                onclick="deleteCheckout(1)"></td>
+                    </tr>
+                    <tr class="border-bottom product2 product">
+                        <td class="product-image"><img src="img/iphone-11-pro-max-vang.jpg.webp"></td>
+                        <td class="product-description">iPhone 11 Pro Max màu vàng
+                        </td>
+                        <td class="product-price">10,229,000₫</td>
+                        <td class="product-quantity"><input type="number" value="1" min="1" onchange="calculate(2)">
+                        </td>
+                        <td class="product-sum">10,229,000₫</td>
+                        <td class="delete-btn"><img src="img/th__1_-removebg-preview.png" class="delete-icon"
+                                onclick="deleteCheckout(2)"></td>
+                    </tr>
+                    <tr class="product3 product">
+                        <td class="product-image"><img src="img/iphone-13-xanh.jpg.webp"></td>
+                        <td class="product-description">iPhone 13 Xanh
+                        </td>
+                        <td class="product-price">13,000,000₫</td>
+                        <td class="product-quantity"><input type="number" value="1" min="1" onchange="calculate(3)">
+                        </td>
+                        <td class="product-sum">13,000,000₫</td>
+                        <td class="delete-btn"><img src="img/th__1_-removebg-preview.png" class="delete-icon"
+                                onclick="deleteCheckout(3)"></td>   
+                    </tr>
+                    <tr class="border-bottom product1 product">
+                        <td class="product-image"><img src="img/iphone-16-xanh-mong-ket.jpg.webp"></td>
+                        <td class="product-description">iPhone 16 Xanh</td>
+                        <td class="product-price">26,000,000₫</td>
+                        <td class="product-quantity"><input type="number" value="1" min="1" onchange="calculate(4)">
+                        </td>
+                        <td class="product-sum">26,000,000₫</td>
+                        <td class="delete-btn"><img src="img/th__1_-removebg-preview.png" class="delete-icon"
+                                onclick="deleteCheckout(4)"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="checkout-btns-group">
+                <div class="sum-group">
+                    <div class="sum-text">Tổng</div>
+                    <div class="sum-value">57,819,000₫</div>
+                </div>
+                <div class="btn-group">
+                    <a href="donu.html"><button class="btn-homepage">TIẾP TỤC MUA SẮM</button></a>
+                    <button class="btn-checkout">THANH TOÁN</button>
+                </div>
+                <div class="note-group">
+                    <div class="note-text">Chú thích</div>
+                    <textarea type="text" class="note-input" placeholder="Mô tả rõ hơn về đơn hàng"
+                        resize="none"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-item">
+            <div class="title">
+                <i class="fa-solid fa-location-dot"></i>
+                HỆ THỐNG CỬA HÀNG
+            </div>
+            <div class="address">
+                <ul>
+                    <li><h4>Hà Nội</h4><p>120 Thái Hà, Q. Đống Đa</p><p>Điện thoại: 0969.120.120 - 037.437.9999</p></li>
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <li><h4>Hồ Chí Minh</h4><p>123 Trần Quang Khải, Q.1</p><p>Điện thoại: 0965.123.123 - 0969.520.520</p></li>
+                    
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <li><h4>Đà Nẵng</h4><p>97 Hàm Nghi, Q.Thanh Khê</p><p>Điện thoại: 096.123.9797 - 097.123.9797</p></li>
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <strong><li>Hotline CSKH: 035.941.25.40</li></strong>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-item">  
+            <div class="title">
+                <i class="fa-regular fa-circle-question"></i>
+                QUY ĐỊNH - CHÍNH SÁCH
+            </div>
+            <ul class ="policy">
+                <a href=""><li>Chính sách bảo hành</li></a><br>
+                <a href=""><li>Chính sách vận chuyển</li></a><br>
+                <a href=""><li>Chính sách đổi trả hàng</li></a><br>
+                <a href=""><li>Chính sách bảo mật thông tin</li></a><br>
+                <a href=""><li>Hướng dẫn thanh toán</li></a><br>
+                <a href=""><li>Hướng dẫn mua hàng Online</li></a><br>
+                <a href=""><li>Dịch vụ Ship COD Toàn quốc</li></a><br>
+                <a href=""><li>Chính sách đại lý linh, phụ kiện</li></a>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <div class="title">
+                <i class="fa-regular fa-envelope"></i>
+                ĐĂNG KÝ NHẬN BẢNG TIN
+            </div>
+            <div>
+                <input class="mail" type="text" placeholder="Nhập email của bạn...">
+                <button class="button">Gửi</button>
+            </div>
+            
+        </div>
+        <div class="footer-item">
+            <div class="title">
+                <i class="fa-solid fa-share-nodes"></i>
+                LIÊN KẾT
+            </div >
+            <ul class="social">
+                <a href=""><li><i class="fa-brands fa-facebook"></i>Facebook</li></a>
+                <a href=""><li><i class="fa-brands fa-youtube"></i>Youtube</li></a>
+                <a href=""><li><img style="width: 20px;" src="img/icons8-zalo-48.png" alt="">Zalo</li></a>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
